@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherPro</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay"></div>
+
+<div class="container">
+
+    <div class="weather-card">
+
+        <h1 class="logo">
+            <i class="fa-solid fa-cloud-sun"></i>
+            WeatherPro
+        </h1>
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Search any city..."
+            >
+
+            <button id="searchBtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div class="weather-main">
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt=""
+            >
+
+            <h2 id="city">Hyderabad</h2>
+
+            <h1 id="temp">30°C</h1>
+
+            <p id="condition">Clear Sky</p>
+
+        </div>
+
+        <div class="details">
+
+            <div class="box">
+                <i class="fa-solid fa-temperature-three-quarters"></i>
+                <span>Feels Like</span>
+                <h3 id="feelsLike">31°C</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-droplet"></i>
+                <span>Humidity</span>
+                <h3 id="humidity">55%</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-wind"></i>
+                <span>Wind</span>
+                <h3 id="wind">12 km/h</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <span>Visibility</span>
+                <h3 id="visibility">10 km</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-sun"></i>
+                <span>UV Index</span>
+                <h3 id="uv">5</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Country</span>
+                <h3 id="country">India</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
